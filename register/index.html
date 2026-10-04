@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="../lib/Bootstrap/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>حساب جديد</title>
+</head>
+
+<body class="login-body" dir="rtl">
+    <div class="container d-flex align-items-center justify-content-center w-50 card shadow login-container">
+        <div class="card-body p-4 w-100 h-50">
+            <form id="registrationForm" class="login-form needs-validation" style="height: 725px;" novalidate>
+                <h2 class="card-title text-center">انشاء حساب جديد</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="full-name" class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="full-name" placeholder="الاسم الكامل" required>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">اسم المستخدم</label>
+                            <input type="text" class="form-control" id="username" placeholder="اسم المستخدم"
+                                pattern="[a-zA-Z][a-zA-Z0-9]*" required>
+                            <div class="invalid-feedback">الرجاء ادخال اسم مستخدم صالح... يحب ان يحتوي اسم المستخدم على
+                                حروف لاتينية وأرقام فقط</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">كلمة المرور:</label>
+                            <input type="password" class="form-control" id="password" placeholder="كلمة المرور"
+                                required>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">تأكيد كلمة المرور</label>
+                            <input type="password" class="form-control" id="confirm-password"
+                                placeholder="تأكيد كلمة المرور" required>
+                            <div class="invalid-feedback">يجب ان يكون تأكيد كلمة المرور مطابق لكلمة المرور</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الالكتروني</label>
+                            <input type="email" style="direction: rtl;" class="form-control" id="email"
+                                placeholder="البريد الالكتروني" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                required>
+                            <div class="invalid-feedback">الرجاء اذخال بريد الكتروني صالح</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">رقم الهاتف</label>
+                            <input type="text" class="form-control" id="phone" placeholder="رقم الهاتف"
+                                pattern="[+]?[\d\s()-]{8,}" required>
+                            <div class="invalid-feedback">الرجاء اذخال رقم هاتف صالح</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="age" class="form-label">العمر</label>
+                            <input type="number" style="direction: rtl;" class="form-control" id="age"
+                                placeholder="العمر" required>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sex" class="form-label">الجنس</label>
+                            <select class="form-select" id="sex" required>
+                                <option value="male">ذكر</option>
+                                <option value="female">أنثى</option>
+                            </select>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nationality" class="form-label">الجنسية</label>
+                            <select class="form-select" id="nationality" required>
+                                <option value="syrian">سوري</option>
+                                <option value="palastinian">فلسطيني</option>
+                                <option value="libanees">لبناني</option>
+                                <option value="jordinan">أردني</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="marriageStatus" class="form-label" required>الوضع الاجتماعي</label>
+                            <select class="form-select" id="marriageStatus">
+                                <option value="single">عازب</option>
+                                <option value="married">متزوج</option>
+                                <option value="divorced">مطلق</option>
+                                <option value="divorced">أرمل</option>
+                            </select>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="educationLevel" class="form-label" required>المستوى التعليمي</label>
+                            <select class="form-select" id="educationLevel">
+                                <option value="school">أساسي</option>
+                                <option value="highSchool">ثانوي</option>
+                                <option value="bachelor">جامعي</option>
+                                <option value="master">ماجستير</option>
+                                <option value="doctor">دكتوراه</option>
+                            </select>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="work" class="form-label" required>الوضع الوظيفي</label>
+                            <select class="form-select" id="work">
+                                <option value="employed">موظف</option>
+                                <option value="selfEmployed">عمل حر</option>
+                                <option value="unemployed">غير موظف</option>
+                            </select>
+                            <div class="invalid-feedback">هذا الحقل مطلوب</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block d-block m-auto w-25">انشاء</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="text-center">©️ 2023 جميع الحقوق محفوظة</footer>
+    <script src="../lib/jQuery/jQuery.js"></script>
+    <script src="../lib/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../script/site.js"></script>
+    <script>
+
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+
+                    const password = $("#password").val();
+                    const confirmPassword = $("#confirm-password").val();
+                    if (!form.checkValidity() || password !== confirmPassword) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    if (password !== confirmPassword) {
+                        $("#confirm-password").addClass("is-invalid");
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  direction: rtl;
+}
+
+.login-body {
+  background-image: url("../assets/images/background.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container {
+  min-height: 50vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 375px;
+}
+
+.login-form > * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.wizard-container {
+  display: flex;
+  opacity: 0.9;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wizard-step {
+  display: none;
+  width: 100%;
+  min-width: 800px;
+  min-height: 480px;
+}
+
+.active-step {
+  display: block;
+}
+
+.login-container {
+  min-height: 50vh;
+}
+
+.title-box {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 2px solid gray;
+  border-radius: 0.5rem;
+}
+
+.ansower-label {
+  font-size: 20px;
+}

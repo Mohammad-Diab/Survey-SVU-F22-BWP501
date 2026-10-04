@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="../lib/Bootstrap/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>اسئلة الاستبيان</title>
+</head>
+
+<body class="login-body">
+
+    <div class="wizard-container">
+        <div class="card">
+            <div style="min-width: 640px; min-height: 480px;" class="card-body p-5">
+                <div id="wizard-step-1" class="wizard-step active-step">
+                    <h3 for="options" class="mb-5">هل تحب الرياضة؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q1" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q1" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q1" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">أبداً</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q1" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">ليس كثيراً</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-2" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تتبع نظام غذائي للحفاظ على صحتك و لياقتك البدنية؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q2" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q2" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q2" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">أبداً</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q2" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">أفضل ذلك لكن لا أستطبع</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-3" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تتبع نظام زمني معين لممارسة الرياضة؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q3" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q3" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q3" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">أفضل ذلك لكن لا أستطيع الالتزام</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q3" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">أبداً لا أحب الروتين</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-4" class="wizard-step">
+                    <h3 for="options" class="mb-5">كم مرة تمارس الرياضة في الإسبوع؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q4" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">يومياً</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q4" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">ثلاث مرات</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q4" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">مرتان</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q4" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">ولا مرة</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-5" class="wizard-step">
+                    <h3 for="options" class="mb-5">ما مدة كل جلسة تمرين تقوم بممارستها؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q5" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">أكثر من نصف ساعة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q5" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">نصف ساعة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q5" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">ربع ساعة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q5" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">عشرة دقائق</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-6" class="wizard-step">
+                    <h3 for="options" class="mb-5">أين تحب ممارسة الرياضة؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q6" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">في النادي الرياضي</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q6" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">في المنزل</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q6" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">في الملعب مع الرفاق</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q6" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">في الحديقة</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-7" class="wizard-step">
+                    <h3 for="options" class="mb-5">برأيك متى تكون أفضل فترة زمنية لممارسة الرياضة؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q7" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">في الصيف على شاطئ البحر</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q7" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">في الشتاء على القمم الثلجية</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q7" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">في الربيع بين أحضان الطبيعة الخضراء</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q7" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">في الخريف بين أوراق الشجر المتساقطة</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-8" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تعتقد أن النشاط البدني له تأثير إيجابي على الصحة العقلية؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q8" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q8" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q8" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">لا أعتقد أن هناك علاقة مباشرة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q8" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">قد يكون هناك علاقة</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-9" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تعتقد أن النظام الغذائي يلعب دوراً مهماً في الحفاظ على الصحة البدنية؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q9" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q9" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q9" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">ليس بالضرورة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q9" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">بالطبع نوعية الغذاء لها تأثير على الصحة البدنية</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-10" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تعتقد أن النشاط البدني له تأثير على النوم و الراحة الجسدية؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q10" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q10" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q10" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">ليس بالضرورة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q10" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">لا أعتقد ذلك</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-11" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تظن أن النشاط البدني يمكن أن يساعد في السيطرة على الأمراض المزمنة؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q11" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q11" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q11" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">ليس بالضرورة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q11" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">لا أظن ذلك لأنه لا يوجد علاقة بينهما</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-12" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تعتقد أن التدخين له تأثير سلبي على اللياقة البدنية؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q12" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q12" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">لا</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q12" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">بالطبع له تأثير كبير</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q12" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">لا أعتقد ذلك</label>
+                    </div>
+                </div>
+
+                <div id="wizard-step-13" class="wizard-step">
+                    <h3 for="options" class="mb-5">هل تعتقد أن النشاط البدني يمكن أن يحسن الأداء و يزيد الإنتاجية في العمل؟</h3>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q13" id="op1" value="op1">
+                        <label class="form-check-label ansower-label" for="op1">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q13" id="op2" value="op2">
+                        <label class="form-check-label ansower-label" for="op2">نعم</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q13" id="op3" value="op3">
+                        <label class="form-check-label ansower-label" for="op3">ليس بالضرورة</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="q13" id="op4" value="op4">
+                        <label class="form-check-label ansower-label" for="op4">لا أعتقد ذلك</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 card-footer">
+                <button id="prev-btn" class="btn btn-primary w-25 mx-lg-4" disabled>السابق</button>
+                <button id="next-btn" class="btn btn-primary w-25">ابدأ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">©️ 2023 جميع الحقوق محفوظة</footer>
+    <script src="../lib/jQuery/jQuery.js"></script>
+    <script src="../lib/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../script/site.js"></script>
+    <script>
+        $(document).ready(function () {
+            var currentStep = 1;
+            var lastStepIndex = $('.wizard-step').length - 1;
+            showStep(currentStep);
+            updateButtonState();
+
+            function showStep(step) {
+                $('.wizard-step').removeClass('active-step');
+                $('#wizard-step-' + step).addClass('active-step');
+            }
+
+            function nextStep() {
+                if (currentStep < lastStepIndex) {
+                    let selectedVal = document.querySelector(`input[name="q${currentStep}"]:checked`)?.value;
+                    if(!selectedVal){
+                        showMessage("يجب اختيار اجابة قبل ان تتمكن من المتابعة!");
+                        return
+                    }
+                    currentStep++;
+                    showStep(currentStep);
+                    updateButtonState();
+                }
+            }
+
+            function prevStep() {
+                if (currentStep > 1) {
+                    currentStep--;
+                    showStep(currentStep);
+                    updateButtonState();
+                }
+            }
+
+            function updateButtonState() {
+                if (currentStep === 1) {
+                    $('#prev-btn').prop('disabled', true);
+                } else {
+                    $('#prev-btn').prop('disabled', false);
+                }
+
+                if (currentStep === lastStepIndex) {
+                    $('#next-btn').text('ارسال');
+                } else {
+                    $('#next-btn').text('التالي');
+                }
+            }
+
+            // Attach event handlers for next and previous buttons
+            $('#next-btn').click(nextStep);
+            $('#prev-btn').click(prevStep);
+        });
+    </script>
+</body>
+
+</html>

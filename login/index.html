@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../style/fonts.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Login Page</title>
+</head>
+
+<body dir="rtl" class="login-body">
+    <div class="container d-flex align-items-center justify-content-center w-50 card shadow login-container">
+        <div class="card-body p-4 w-100 h-50">
+            <form class="login-form needs-validation" novalidate>
+                <h2 class="card-title text-center">تسجيل الدخول</h2>
+                <div class="">
+                    <label for="email" class="form-label">البريد الالكتروني:</label>
+                    <input type="email" style="direction: rtl;" class="form-control" id="email"
+                        placeholder="البريد الالكتروني" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                        required>
+                    <div class="invalid-feedback">الرجاء اذخال بريد الكتروني صالح</div>
+                </div>
+
+                <div class="">
+                    <label for="password" class="form-label">كلمة المرور:</label>
+                    <input type="password" class="form-control" id="password" placeholder="كلمة المرور" required>
+                    <div class="invalid-feedback">الرجاء اذخال كلمة المرور</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block d-block m-auto w-25">دخول</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../lib/jQuery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../script/site.js"></script>
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
